@@ -6,7 +6,7 @@ module.exports.tenders = async (req, res) => {
     try {
 
         
-        // const tenders = await Tender.find();
+        const tenders = await Tender.find();
         res.status(200).json({ message: "success", tenders });
     } catch (error) {
         res.status(500).json({ message: error.message, status: "failed" });
