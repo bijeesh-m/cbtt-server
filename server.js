@@ -18,7 +18,7 @@ dbConnect();
 app.get("/", async (req, res) => {
     //    const tenders =  await Tender.find();
     //    res.send(tenders)
-    const users = await User.find();
+    const users = "hello users"
     res.send(users);
 });
 
