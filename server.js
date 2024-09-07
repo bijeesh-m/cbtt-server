@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser())
 
-// dbConnect();
+dbConnect();
 
 app.use("/user", userRoute);
 app.use("/tender", tenderRoute);
