@@ -16,8 +16,10 @@ app.use(cookieParser());
 dbConnect();
 
 app.get("/", async (req, res) => {
-    await Tender.find();
-    await User.find();
+    //    const tenders =  await Tender.find();
+    //    res.send(tenders)
+    const users = await User.find();
+    res.send(users);
 });
 
 app.use("/user", userRoute);
